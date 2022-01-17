@@ -14,6 +14,7 @@ body {
   font-family: 'Inter', sans-serif;
   background-color: black;
   color: white;
+  
 }
 
 header {
@@ -30,7 +31,11 @@ header {
   margin-right: 2rem;
 }
 
-
+.nav ul li a {
+  text-decoration: none;
+  color: white;
+  cursor: pointer;
+}
 
 .btn {
   color: black;
@@ -93,7 +98,7 @@ header {
   display: block;
   margin-top: 3rem;
   background-color: rgb(57, 55, 63);
-
+  gap: 3rem;
   display: flex;
   padding: 3rem;
 }
@@ -107,8 +112,15 @@ header {
   font-family: 'Inter', sans-serif;
   line-height: 2rem;
   color: var(--gray-text);
-
 }
+
+.another-intro .left {
+width: 50%;
+}
+
+.another-intro .right {
+  width: 50%;
+  }
 
 .contact {
   padding: 3rem;
@@ -152,9 +164,14 @@ footer .socials .social-icons {
   } */
 
   .companylogos {
-    display: flex;
-    flex-direction: column;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    padding: 1rem;
+  }
 
+  .companylogos .eachlogo {
+    padding: .8rem;
+    text-align: center;
   }
 
   .screendesc {
@@ -169,5 +186,7 @@ footer .socials .social-icons {
   .another-intro {
     display: flex;
     flex-direction: column;
+    align-items: center;
+    justify-content: center;
   }
 }
