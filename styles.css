@@ -32,3 +32,26 @@ header {
   padding: .5rem 1.4rem;
   font-family: 'Prata', serif;
 }
+
+.intro {
+  width: 80%;
+  margin-top: 5rem;
+  
+}
+.intro h1 {
+  font-family: 'Prata', serif;
+  font-size: 24px;
+  line-height: 3rem;
+}
+
+.intro p {
+  font-family: 'Inter', sans-serif;
+  font-size: 15px;
+}
+
+.companylogos {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 2rem;
+}
