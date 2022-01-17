@@ -76,24 +76,30 @@ header {
   margin-top: 2rem;
 }
 
-.screendesc {
+.portfolio {
   margin-top: 2.5rem;
   padding: 3rem;
   display: flex;
   justify-content: space-between;
   gap: 3em;
+  
 }
 
-.screendesc .spense h2 {
+.portfolio .spense h2 {
   font-family: "Prata", serif;
   font-size: 36px;
   line-height: 3rem;
   padding-top: 10px;
 }
 
-.screendesc .spense p {
+.portfolio .spense p {
   padding-top: 10px;
   color: var(--gray-text);
+}
+
+.portfolio .spense img {
+  max-width: 100%;
+  height: auto;
 }
 
 .another-intro {
@@ -144,6 +150,8 @@ footer {
   background-color: rgb(57, 55, 63);
   display: flex;
   justify-content: space-between;
+  font-family: "Prata", sans-serif;
+
 }
 
 footer .socials .social-icons {
@@ -164,6 +172,7 @@ footer .socials .social-icons {
     position: absolute;
     right: 100px;
     top: 100px;
+    
   }
 
   .getbutton {
@@ -190,12 +199,13 @@ footer .socials .social-icons {
     text-align: center;
   }
 
-  .screendesc {
+  .portfolio {
     display: flex;
     flex-direction: column;
+    
   }
 
-  .screendesc .spense img {
+  .portfolio .spense img {
     width: 100%;
   }
 
@@ -204,5 +214,6 @@ footer .socials .social-icons {
     flex-direction: column;
     align-items: center;
     justify-content: center;
+    
   }
 }
