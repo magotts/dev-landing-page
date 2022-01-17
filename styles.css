@@ -1,5 +1,9 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter&family=Prata&display=swap');
 
+:root {
+  --gray-text:rgb(119, 117, 122);
+}
+
 * {
   padding: 0;
   margin: 0;
@@ -23,6 +27,7 @@ header {
 .nav ul li {
   display: inline;  
   font-family: 'Inter', sans-serif;
+  
 }
 
 .btn {
@@ -34,20 +39,22 @@ header {
 }
 
 .intro {
-  width: 80%;
+  width: 100%;
   margin-top: 5rem;
   padding: 3rem;
-  
+  max-width: 680px;
 }
+
 .intro h1 {
   font-family: 'Prata', serif;
-  font-size: 24px;
-  line-height: 3rem;
+  font-size: 48px;
+  line-height: 4rem;
 }
 
 .intro p {
   font-family: 'Inter', sans-serif;
   font-size: 15px;
+  color: var(--gray-text);
 }
 
 .companylogos {
@@ -66,10 +73,14 @@ header {
   gap: 3em;
 }
 
-.screendesc .spense .h2 {
+.screendesc .spense h2 {
   font-family: 'Prata', serif;
   font-size: 24px;
   line-height: 3rem;
+}
+
+.screendesc .spense p {
+  color: var(--gray-text);
 }
 
 .another-intro {
@@ -89,6 +100,8 @@ header {
 .another-intro p {
   font-family: 'Inter', sans-serif;
   line-height: 2rem;
+  color: var(--gray-text);
+
 }
 
 .contact {
@@ -103,6 +116,7 @@ header {
 .contact p {
   font-family: 'Inter', sans-serif;
   line-height: 2rem;
+  margin-bottom: 1rem;
 }
 
 footer {
@@ -110,4 +124,10 @@ footer {
   background-color: rgb(57, 55, 63);
   display: flex;
   justify-content: space-between;
+}
+
+footer .socials .social-icons { 
+  display: flex;
+  list-style: none;
+  gap: 1rem;
 }
