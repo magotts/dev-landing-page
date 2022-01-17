@@ -27,8 +27,10 @@ header {
 .nav ul li {
   display: inline;  
   font-family: 'Inter', sans-serif;
-  
+  margin-right: 2rem;
 }
+
+
 
 .btn {
   color: black;
@@ -36,6 +38,7 @@ header {
   border: none;
   padding: .5rem 1.4rem;
   font-family: 'Prata', serif;
+  cursor: pointer;
 }
 
 .intro {
@@ -75,11 +78,14 @@ header {
 
 .screendesc .spense h2 {
   font-family: 'Prata', serif;
-  font-size: 24px;
+  font-size: 36px;
   line-height: 3rem;
+  padding-top: 10px;
+
 }
 
 .screendesc .spense p {
+  padding-top: 10px;
   color: var(--gray-text);
 }
 
@@ -87,7 +93,7 @@ header {
   display: block;
   margin-top: 3rem;
   background-color: rgb(57, 55, 63);
-  padding: 10px;
+
   display: flex;
   padding: 3rem;
 }
@@ -120,7 +126,7 @@ header {
 }
 
 footer {
-  padding: 3rem;
+  padding: 2rem;
   background-color: rgb(57, 55, 63);
   display: flex;
   justify-content: space-between;
@@ -130,4 +136,38 @@ footer .socials .social-icons {
   display: flex;
   list-style: none;
   gap: 1rem;
+  cursor: pointer;
+
+ 
+}
+
+@media (max-width: 776px) {
+  header {
+    display: flex;
+    flex-direction: column;
+  }
+
+  /* header .nav .getbutton {
+    display: none;
+  } */
+
+  .companylogos {
+    display: flex;
+    flex-direction: column;
+
+  }
+
+  .screendesc {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .screendesc .spense img {
+    width: 100%;
+  }
+
+  .another-intro {
+    display: flex;
+    flex-direction: column;
+  }
 }
