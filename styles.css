@@ -8,5 +8,27 @@
 
 body {
   font-family: 'Inter', sans-serif;
+  margin: 3rem;
+  background-color: black;
+  color: white;
 }
 
+header {
+  display: flex;  
+  justify-content: space-between;
+  font-family: 'Prata', serif;
+  align-items: center;
+}
+
+.nav ul li {
+  display: inline;  
+  font-family: 'Inter', sans-serif;
+}
+
+.btn {
+  color: black;
+  background-color: yellow;
+  border: none;
+  padding: .5rem 1.4rem;
+  font-family: 'Prata', serif;
+}
